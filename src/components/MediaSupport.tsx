@@ -15,7 +15,7 @@ export function MediaSupport() {
           </h2>
           <p className="text-gray-600">{t('media.subtitle')}</p>
         </div>
-        
+
         <div className="max-w-[280px] sm:max-w-md mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 justify-items-center">
             {mediaData.map((media, index) => (

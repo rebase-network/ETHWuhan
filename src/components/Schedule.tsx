@@ -10,9 +10,11 @@ export function Schedule() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Event Schedule
           </h2>
-          <p className="text-gray-600 text-base sm:text-lg">Three days of innovation, learning, and collaboration</p>
+          <p className="text-gray-600 text-base sm:text-lg">
+            Three days of innovation, learning, and collaboration
+          </p>
         </div>
-        
+
         <div className="grid gap-8 sm:gap-12 px-2 sm:px-6">
           {scheduleData.map((day, index) => (
             <DaySchedule key={index} {...day} isLast={index === scheduleData.length - 1} />

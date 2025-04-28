@@ -15,7 +15,7 @@ export function CommunitySupport() {
           </h2>
           <p className="text-gray-600">{t('community.subtitle')}</p>
         </div>
-        
+
         <div className="max-w-[280px] sm:max-w-5xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-4 justify-items-center">
             {communityData.map((community, index) => (

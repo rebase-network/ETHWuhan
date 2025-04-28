@@ -9,15 +9,15 @@ interface HostType {
 
 const hosts: HostType[] = [
   {
-    name: "Rebase Community",
-    role: "hosts.roles.mainOrganizer",
-    logo: "/logos/hosts/rebase.svg"
+    name: 'Rebase Community',
+    role: 'hosts.roles.mainOrganizer',
+    logo: '/logos/hosts/rebase.svg',
   },
   {
-    name: "WHU Web3 Club",
-    role: "hosts.roles.coOrganizer",
-    logo: "/logos/hosts/whu-web3.svg"
-  }
+    name: 'WHU Web3 Club',
+    role: 'hosts.roles.coOrganizer',
+    logo: '/logos/hosts/whu-web3.svg',
+  },
 ];
 
 export function Hosts() {
@@ -32,16 +32,16 @@ export function Hosts() {
           </h2>
           <p className="text-gray-600">{t('hosts.subtitle')}</p>
         </div>
-        
+
         <div className="max-w-[280px] sm:max-w-2xl mx-auto">
           <div className="grid md:grid-cols-2 gap-4 sm:gap-8 justify-items-center">
             {hosts.map((host, index) => (
-              <div 
+              <div
                 key={index}
                 className="w-full max-w-xs flex flex-col items-center p-4 sm:p-6 bg-white rounded-lg sm:rounded-xl border border-gray-100 hover:shadow-md transition-all duration-300"
               >
                 <div className="w-40 h-40 mb-4 p-4">
-                  <img 
+                  <img
                     src={host.logo}
                     alt={`${host.name} logo`}
                     className="w-full h-full object-contain"

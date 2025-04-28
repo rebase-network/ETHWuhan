@@ -10,9 +10,7 @@ export function ScheduleEvent({ time, title, description }: EventType) {
           <h4 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
             {title}
           </h4>
-          {description && (
-            <p className="text-gray-600 mt-2 leading-relaxed">{description}</p>
-          )}
+          {description && <p className="text-gray-600 mt-2 leading-relaxed">{description}</p>}
         </div>
       </div>
     </div>

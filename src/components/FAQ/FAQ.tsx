@@ -15,7 +15,7 @@ export function FAQ() {
           </h2>
           <p className="text-gray-600 text-base sm:text-lg">{t('faq.subtitle')}</p>
         </div>
-        
+
         <div className="max-w-5xl mx-auto">
           <div className="divide-y divide-gray-200 px-2 sm:px-6">
             {faqData.map((faq, index) => (

@@ -16,7 +16,11 @@ export function SocialMedia() {
     { platform: 'twitter', url: 'https://x.com/RebaseCommunity', label: 'Follow us on Twitter' },
     { platform: 'github', url: 'https://github.com/rebase-network', label: 'Check our GitHub' },
     { platform: 'wechat', url: 'rebase_network', label: 'Follow our WeChat: rebase_network' },
-    { platform: 'bilibili', url: 'https://space.bilibili.com/382886213', label: 'Follow us on Bilibili' },
+    {
+      platform: 'bilibili',
+      url: 'https://space.bilibili.com/382886213',
+      label: 'Follow us on Bilibili',
+    },
   ];
 
   const handleWeChatClick = (e: React.MouseEvent<HTMLAnchorElement>) => {

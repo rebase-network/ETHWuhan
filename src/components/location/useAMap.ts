@@ -25,7 +25,7 @@ export function useAMap() {
 
     // Set security config
     window._AMapSecurityConfig = {
-      securityJsCode: SecurityCode
+      securityJsCode: SecurityCode,
     };
 
     // Load AMap script
@@ -33,7 +33,7 @@ export function useAMap() {
     script.type = 'text/javascript';
     script.async = true;
     script.src = `https://webapi.amap.com/maps?v=${AMapVersion}&key=${AMapKey}&plugin=AMap.Scale,AMap.ToolBar`;
-    
+
     script.onload = () => setIsLoaded(true);
     script.onerror = () => {
       console.error('Failed to load AMap');

@@ -27,23 +27,25 @@ export function AMapComponent({ center, zoom = 15 }: AMapComponentProps) {
       resizeEnable: true,
       viewMode: '2D',
       lang: 'zh_cn',
-      mapStyle: 'amap://styles/normal'
+      mapStyle: 'amap://styles/normal',
     });
 
     // Add marker
     const marker = new window.AMap.Marker({
       position: center,
       animation: 'AMAP_ANIMATION_DROP',
-      title: 'ETH Wuhan Venue'
+      title: 'ETH Wuhan Venue',
     });
 
     mapInstance.current.add(marker);
 
     // Add controls
     mapInstance.current.addControl(new window.AMap.Scale());
-    mapInstance.current.addControl(new window.AMap.ToolBar({
-      position: 'RB'
-    }));
+    mapInstance.current.addControl(
+      new window.AMap.ToolBar({
+        position: 'RB',
+      })
+    );
 
     return () => {
       if (mapInstance.current) {
@@ -53,8 +55,8 @@ export function AMapComponent({ center, zoom = 15 }: AMapComponentProps) {
   }, [center, zoom, isLoaded]);
 
   return (
-    <div 
-      ref={mapRef} 
+    <div
+      ref={mapRef}
       className="w-full h-72 rounded-lg shadow-sm relative overflow-hidden"
       style={{ minHeight: '300px' }}
     />
