@@ -1,5 +1,5 @@
 import React from 'react';
-import { Background } from '../art/Background';
+import { Background } from '../Background';
 
 export function HeroBackground() {
   return <Background />;
