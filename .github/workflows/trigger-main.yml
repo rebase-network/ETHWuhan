@@ -1,0 +1,17 @@
+name: trigger-netlify-build | Main Branch
+
+on:
+  push:
+    branches: [ master ]
+
+  pull_request:
+    branches: [ master ]
+    types: [ closed ]
+    paths-ignore: [ "package.json","package-lock.json",  "CHANGELOG.md", ".gitignore", ".github"]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} "${{ secrets.YOUR_BUILD_HOOK }}"
