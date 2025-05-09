@@ -6,7 +6,7 @@ export function Background() {
       {/* SVG Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("/background.svg")' }}
+        style={{ backgroundImage: 'url("/banner.png")' }}
       />
 
       {/* Dark gradient overlay with 15% opacity */}

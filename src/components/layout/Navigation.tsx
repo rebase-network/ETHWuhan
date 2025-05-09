@@ -15,7 +15,7 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-opacity-90 bg-black backdrop-blur-sm">
+    <nav className="fixed w-full z-50 bg-opacity-90 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-3 sm:py-4">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center gap-2 text-white">
