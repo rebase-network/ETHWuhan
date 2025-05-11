@@ -29,24 +29,20 @@ export function SocialMedia() {
   };
 
   return (
-    <div className="py-8 bg-gray-900">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center gap-6">
-          {socialLinks.map((link) => (
-            <a
-              key={link.platform}
-              href={link.url}
-              className="text-gray-400 hover:text-white transition-colors"
-              aria-label={link.label}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={link.platform === 'wechat' ? handleWeChatClick : undefined}
-            >
-              <SocialIcon platform={link.platform} />
-            </a>
-          ))}
-        </div>
-      </div>
+    <div className="flex flex-nowrap justify-end gap-6">
+      {socialLinks.map((link) => (
+        <a
+          key={link.platform}
+          href={link.url}
+          className="text-gray-400 hover:text-white transition-colors"
+          aria-label={link.label}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={link.platform === 'wechat' ? handleWeChatClick : undefined}
+        >
+          <SocialIcon platform={link.platform} />
+        </a>
+      ))}
     </div>
   );
 }

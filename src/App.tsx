@@ -10,6 +10,7 @@ import { MediaSupport } from './components/MediaSupport';
 import { CommunitySupport } from './components/CommunitySupport';
 import { FAQ } from './components/FAQ/FAQ';
 import { SocialMedia } from './components/SocialMedia';
+import { EthWuhanLogo } from './components/logo/EthWuhanLogo';
 
 function App() {
   const { t } = useTranslation();
@@ -26,10 +27,16 @@ function App() {
       <CommunitySupport />
       <FAQ />
 
-      <footer className="bg-gray-900 text-white">
-        <SocialMedia />
-        <div className="container mx-auto px-4 py-8 text-center">
+      <footer className="bg-gray-900 text-white flex justify-between items-center p-[40px] flex-col md:flex-row space-y-6 md:space-y-0">
+        <a href="/" className="flex-1 flex items-center gap-2">
+          <EthWuhanLogo className="w-8 h-8" />
+          <span className="text-lg sm:text-xl font-bold text-nowrap">{t('hero.title')}</span>
+        </a>
+        <div className="flex-1 text-center text-xs">
           <p>{t('footer.copyright')}</p>
+        </div>
+        <div className="flex-1">
+          <SocialMedia />
         </div>
       </footer>
     </div>
