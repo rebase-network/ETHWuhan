@@ -24,10 +24,10 @@ export function Hosts() {
   const { t } = useTranslation();
 
   return (
-    <div className="py-16 sm:py-24 bg-gradient-to-b from-white to-gray-50">
+    <div className="py-16 sm:py-24 bg-[url('/images/ball.svg')] bg-no-repeat bg-center bg-cover">
       <div className="w-full px-2 sm:container sm:mx-auto sm:px-4">
         <div className="text-center mb-8 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-2xl sm:text-4xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent uppercase">
             {t('hosts.title')}
           </h2>
           <p className="text-gray-600">{t('hosts.subtitle')}</p>
