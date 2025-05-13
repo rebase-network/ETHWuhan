@@ -10,7 +10,7 @@ export function MediaSupport() {
     <div className="py-6 sm:py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="w-full px-2 sm:container sm:mx-auto sm:px-4">
         <div className="text-center mb-4 sm:mb-8">
-          <h2 className="text-2xl sm:text-4xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-2xl sm:text-4xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent uppercase">
             {t('media.title')}
           </h2>
           <p className="text-gray-600">{t('media.subtitle')}</p>
